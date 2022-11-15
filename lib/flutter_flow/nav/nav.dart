@@ -108,6 +108,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                   : ProfileWidget(),
             ),
             FFRoute(
+              name: 'About',
+              path: 'about',
+              builder: (context, params) => AboutWidget(),
+            ),
+            FFRoute(
               name: 'Detail-01',
               path: 'detail01',
               builder: (context, params) => Detail01Widget(),
