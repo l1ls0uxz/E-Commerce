@@ -153,11 +153,11 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.account_circle_outlined,
+              Icons.person_outline_rounded,
               size: 24,
             ),
             activeIcon: Icon(
-              Icons.account_circle_sharp,
+              Icons.person,
               size: 24,
             ),
             label: 'Profile',
