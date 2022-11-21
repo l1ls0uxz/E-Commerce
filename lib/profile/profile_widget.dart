@@ -37,26 +37,6 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Card(
-                    clipBehavior: Clip.antiAliasWithSaveLayer,
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(2, 2, 2, 2),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8),
-                        child: Image.network(
-                          currentUserPhoto,
-                          width: 80,
-                          height: 80,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                  ),
                   Expanded(
                     child: Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),

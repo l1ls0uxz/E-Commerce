@@ -113,6 +113,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => AboutWidget(),
             ),
             FFRoute(
+              name: 'Cart',
+              path: 'cart',
+              builder: (context, params) => CartWidget(),
+            ),
+            FFRoute(
+              name: 'Payment',
+              path: 'payment',
+              builder: (context, params) => PaymentWidget(),
+            ),
+            FFRoute(
               name: 'Detail-01',
               path: 'detail01',
               builder: (context, params) => Detail01Widget(),

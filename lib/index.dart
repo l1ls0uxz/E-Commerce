@@ -5,6 +5,8 @@ export 'home/home_widget.dart' show HomeWidget;
 export 'category/category_widget.dart' show CategoryWidget;
 export 'profile/profile_widget.dart' show ProfileWidget;
 export 'about/about_widget.dart' show AboutWidget;
+export 'cart/cart_widget.dart' show CartWidget;
+export 'payment/payment_widget.dart' show PaymentWidget;
 export 'detail_01/detail01_widget.dart' show Detail01Widget;
 export 'detail_02/detail02_widget.dart' show Detail02Widget;
 export 'detail_03/detail03_widget.dart' show Detail03Widget;

@@ -33,7 +33,16 @@ class _Detail01WidgetState extends State<Detail01Widget>
         automaticallyImplyLeading: false,
         leading: InkWell(
           onTap: () async {
-            context.pop();
+            context.pushNamed(
+              'Home',
+              extra: <String, dynamic>{
+                kTransitionInfoKey: TransitionInfo(
+                  hasTransition: true,
+                  transitionType: PageTransitionType.fade,
+                  duration: Duration(milliseconds: 0),
+                ),
+              },
+            );
           },
           child: Icon(
             Icons.arrow_back_rounded,
@@ -78,8 +87,17 @@ class _Detail01WidgetState extends State<Detail01Widget>
                   color: FlutterFlowTheme.of(context).secondaryText,
                   size: 30,
                 ),
-                onPressed: () {
-                  print('IconButton pressed ...');
+                onPressed: () async {
+                  context.pushNamed(
+                    'Cart',
+                    extra: <String, dynamic>{
+                      kTransitionInfoKey: TransitionInfo(
+                        hasTransition: true,
+                        transitionType: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 0),
+                      ),
+                    },
+                  );
                 },
               ),
             ),
@@ -360,8 +378,17 @@ class _Detail01WidgetState extends State<Detail01Widget>
                       ),
                     ),
                     FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
+                      onPressed: () async {
+                        context.pushNamed(
+                          'Cart',
+                          extra: <String, dynamic>{
+                            kTransitionInfoKey: TransitionInfo(
+                              hasTransition: true,
+                              transitionType: PageTransitionType.fade,
+                              duration: Duration(milliseconds: 0),
+                            ),
+                          },
+                        );
                       },
                       text: 'Add to Cart',
                       options: FFButtonOptions(
